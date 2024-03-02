@@ -17,7 +17,7 @@ export async function GET(request: NextRequest) {
     });
 
     if (res.status !== 200) {
-        return Response.json({});
+        return Response.json({status:res.status});
     }
 
     const data = await res.json();
@@ -25,6 +25,6 @@ export async function GET(request: NextRequest) {
 
     return Response.json({msg:data.msg});
   } catch (err) {
-    return Response.json({});
+    return Response.json({err:err});
   }
 }
