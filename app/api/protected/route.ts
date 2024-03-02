@@ -1,7 +1,5 @@
-import { cookies } from "next/headers";
 import { NextRequest } from "next/server";
-import { use } from "react";
-
+export const dynamic = 'force-dynamic'
 export async function GET(request: NextRequest) {
   try {
     const accesstoken =  request.cookies.get("accessToken")?.value;

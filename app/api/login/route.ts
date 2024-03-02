@@ -2,12 +2,7 @@
 //more links: https://nextjs.org/docs/pages/building-your-application/authentication
 import { cookies } from "next/headers";
 import { NextRequest } from "next/server";
-import { use } from "react";
-
-export async function GET() {
-  return Response.json({ name: "John Doe" });
-}
-
+export const dynamic = 'force-dynamic'
 export async function POST(request: NextRequest) {
   try {
     const formData = await request.json();
