@@ -57,6 +57,8 @@ export default function Home() {
           <label>Password</label>
           <input className="border  border-slate-800" type="text" name="password" id="2" />
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded" type="submit">Login</button>
+          <br />
+          <p>Username: user password:password</p>
         </form>
       </div>
       <div>
